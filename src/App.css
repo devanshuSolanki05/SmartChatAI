@@ -1,0 +1,236 @@
+.home {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 30px;
+  font-size: 30px;
+}
+.logo {
+  cursor: pointer;
+}
+.hero {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  gap: 20px;
+  padding: 10px 20px;
+}
+#tag {
+  font-size: 2vmax;
+}
+.cate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.upImg,
+.genImg,
+.chat {
+  padding: 10px 20px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.upImg svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(7, 240, 11); /* Upload Icon Color */
+}
+.genImg svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(7, 236, 240); /* Generate Icon Color */
+}
+.chat svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(240, 155, 11); /* Chat Icon Color */
+}
+.upImg:hover,
+.genImg:hover,
+.chat:hover {
+  background-color: rgba(240, 248, 255, 0.108);
+}
+
+/* Input Box */
+.input-box {
+  width: 80%;
+  height: calc(100vh - 80px - 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 8%;
+  box-sizing: border-box;
+}
+
+/* Add and Submit Buttons */
+#add,
+#submit {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.297);
+  background-color: rgb(11, 16, 17);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Dynamic Colors for #add Icons */
+#add svg {
+  width: 30px;
+  height: 30px;
+  color: white; /* Default color for AddIcon */
+}
+#add .upload-icon {
+  color: rgb(7, 240, 11); /* Upload Icon */
+}
+#add .gen-icon {
+  color: rgb(7, 236, 240); /* Generate Icon */
+}
+#add .chat-icon {
+  color: rgb(240, 155, 11); /* Chat Icon */
+}
+
+#submit svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* Input Field */
+form input {
+  width: 80%;
+  height: 60px;
+  background-color: rgb(11, 16, 17);
+  border: 2px solid rgba(255, 255, 255, 0.297);
+  outline: none;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 19px;
+  box-sizing: border-box;
+}
+
+/* Chat Page */
+.chat-page {
+  height: 70%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+.user,
+.ai {
+  width: 90%;
+  padding: 20px 30px;
+  color: white;
+  background-color: rgb(11, 16, 17);
+  border: 2px solid rgba(255, 255, 255, 0.297);
+  border-radius: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.user img {
+  max-width: 300px;
+  width: 90%;
+  border-radius: 20px;
+
+}
+.ai img {
+  max-width: 300px;
+  width: 90%;
+  border-radius: 20px;
+}
+
+/* Pop-up */
+.pop-up {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(11, 16, 17);
+  border: 2px solid rgba(255, 255, 255, 0.175);
+  position: absolute;
+  bottom: 150px;
+  left: 0%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+.select-up,
+.select-gen {
+  color: white;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.select-gen:hover,
+.select-up:hover {
+  background-color: rgba(240, 248, 255, 0.1);
+}
+.select-up svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(7, 240, 11);
+}
+.select-gen svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(7, 236, 240);
+}
+#im{
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 150px;
+  left: 15%;
+  box-shadow: 2px 2px 10px blue rgba(0,0, 255,0.209);
+}
+
+@media (max-width: 500px) {
+  #tag {
+    font-size: 20px;
+  }
+}
